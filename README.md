@@ -57,7 +57,15 @@ DB_USERNAME=root
 DB_PASSWORD=your_password
 ```
 
-4. **Database Setup**
+4. **Generate JWT Secret**
+
+Run the following command to generate the JWT secret:
+
+```bash
+php artisan jwt:secret
+```
+
+5. **Database Setup**
 
 ```bash
 php artisan migrate
@@ -78,7 +86,6 @@ php artisan serve
 ```
 
 * Access the API at: [http://127.0.0.1:8000](http://127.0.0.1:8000)
-
 
 ---
 
@@ -105,6 +112,8 @@ php artisan serve
 * **Update comment:** PUT `/api/posts/{postId}/comments/{id}` (requires authentication)
 * **Delete comment:** DELETE `/api/posts/{postId}/comments/{id}` (requires authentication)
 
+---
+
 ## Testing the API
 
 You can test the API using Postman or any other API testing tool. Make sure to include the `Authorization: Bearer {token}` header for authenticated routes.
@@ -117,3 +126,7 @@ You can test the API using Postman or any other API testing tool. Make sure to i
 * Check if your database server is running.
 
 Feel free to open an issue if you encounter any problems!
+
+---
+
+You can directly paste this updated README content into your Canvas document to update it! Let me know if you need any further assistance.
